@@ -1,8 +1,8 @@
-import { Footer, Row, Col } from "react-bootstrap";
+import { Row, Col, Button } from "react-bootstrap";
 
 const NetflixFooter = function () {
   return (
-    <Footer>
+    <footer>
       <Row className="justify-content-center mt-5">
         <Col className="col-6">
           <Row>
@@ -106,12 +106,9 @@ const NetflixFooter = function () {
           </Row>
           <Row>
             <Col className="mb-2">
-              <button
-                type="button"
-                className="btn btn-sm footer-button rounded-0 mt-3"
-              >
+              <Button variant="outline-secondary" className="btn-sm footer-button rounded-0 mt-3">
                 Service Code
-              </button>
+              </Button>
             </Col>
           </Row>
           <Row>
@@ -119,7 +116,7 @@ const NetflixFooter = function () {
           </Row>
         </Col>
       </Row>
-    </Footer>
+    </footer>
   );
 };
 
