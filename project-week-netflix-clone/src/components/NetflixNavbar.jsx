@@ -1,25 +1,28 @@
-import { Container, Navbar, Nav } from "react-bootstrap";
+import { Container, Navbar, Nav, Image } from "react-bootstrap";
 
 const NetflixNavbar = function () {
   return (
-    <Navbar expand="lg" className="bg-dark" data-bs-theme="dark">
-      <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+    <Navbar expand="lg" data-bs-theme="dark">
+      <Container fluid>
+      <Navbar.Brand href="#home">
+        <Image src="assets/logo.png" width={100} height={55}/>
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto mb-2 mb-lg-0">
-          <Nav.Link href="#home" className="fw-bold ms-2">
+          <Nav.Link href="#home" className="fw-bold active">
             Home
           </Nav.Link>
-          <Nav.Link href="#" className="fw-bold ms-2">
-            Tv Shows
+          <Nav.Link href="#" className="fw-bold">
+            TV Shows
           </Nav.Link>
-          <Nav.Link href="#" className="fw-bold ms-2">
+          <Nav.Link href="#" className="fw-bold">
             Movies
           </Nav.Link>
-          <Nav.Link href="#" className="fw-bold ms-2">
+          <Nav.Link href="#" className="fw-bold">
             Recently Added
           </Nav.Link>
-          <Nav.Link href="#" className="fw-bold ms-2">
+          <Nav.Link href="#" className="fw-bold">
             My List
           </Nav.Link>
         </Nav>
@@ -38,6 +41,7 @@ const NetflixNavbar = function () {
       </Nav>
       <Nav className="bi bi-bell icons d-lg-block d-none"></Nav>
       <Nav className="bi bi-person-circle icons d-lg-block d-none"></Nav>
+      </Container>
     </Navbar>
   );
 };
