@@ -27,6 +27,7 @@ const Scheletro = function (){
             </Col>
           </Row>
           </Col>
+          <Col xs={4} md={4}></Col>
         </Row>
       </Container>);
 };
