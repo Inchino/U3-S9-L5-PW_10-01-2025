@@ -15,7 +15,7 @@ class AdminArea extends Component {
 
   componentDidMount = async () => {
     try {
-      let response = await fetch(URL+this.props.saga);
+      let response = await fetch(URL + this.props.saga);
       if (response.ok) {
         let films = await response.json();
         this.setState({ films, isLoading: false, isError: false });
@@ -36,7 +36,9 @@ class AdminArea extends Component {
       <div className="text-center">
         {isLoading && <Loading />}
         {isError && <Error />}
-        {!isLoading && !isError && <FilmsList filmsToShow={films.Search || []} />}
+        {!isLoading && !isError && (
+          <FilmsList filmsToShow={films.Search || []} />
+        )}
       </div>
     );
   }

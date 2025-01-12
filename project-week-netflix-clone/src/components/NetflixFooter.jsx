@@ -106,7 +106,10 @@ const NetflixFooter = function () {
           </Row>
           <Row>
             <Col className="mb-2">
-              <Button variant="outline-secondary" className="btn-sm footer-button rounded-0 mt-3">
+              <Button
+                variant="outline-secondary"
+                className="btn-sm footer-button rounded-0 mt-3"
+              >
                 Service Code
               </Button>
             </Col>

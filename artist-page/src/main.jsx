@@ -8,6 +8,6 @@ import Scheletro from "./components/Scheletro";
 createRoot(document.getElementById("root")).render(
   <>
     <NetflixNavbar />
-    <Scheletro/>
+    <Scheletro />
   </>
 );

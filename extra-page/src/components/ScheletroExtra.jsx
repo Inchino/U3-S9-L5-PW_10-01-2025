@@ -14,7 +14,7 @@ const ScheletroExtra = function () {
           <hr />
           <Row>
             <SectionExtra1 />
-            <hr/>
+            <hr />
           </Row>
           <Row>
             <SectionExtra2 />

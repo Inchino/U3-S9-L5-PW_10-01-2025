@@ -10,6 +10,4 @@ const FilmsList = ({ filmsToShow = [] }) => (
   </Row>
 );
 
-
 export default FilmsList;
-
