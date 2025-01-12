@@ -35,12 +35,10 @@ const NetflixNavbar = function () {
           <Nav className="bi bi-person-circle icons"></Nav>
         </Container>
       </Navbar.Collapse>
-      <Nav className="bi bi-search icons d-lg-block d-none"></Nav>
-      <Nav id="kids" className="fw-bold d-lg-block d-none">
-        KIDS
-      </Nav>
-      <Nav className="bi bi-bell icons d-lg-block d-none"></Nav>
-      <Nav className="bi bi-person-circle icons d-lg-block d-none"></Nav>
+      <Nav.Link href="#"><i className="bi bi-search icons d-lg-block d-none"></i></Nav.Link>
+      <Nav.Link href="#"><Nav id="kids" className="fw-bold d-lg-block d-none">KIDS</Nav></Nav.Link>
+      <Nav.Link href="#"><i className="bi bi-bell icons d-lg-block d-none"></i></Nav.Link>
+      <Nav.Link href="#"><i className="bi bi-person-circle icons d-lg-block d-none"></i></Nav.Link>
       </Container>
     </Navbar>
   );
